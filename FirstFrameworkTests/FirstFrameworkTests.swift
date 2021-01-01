@@ -19,9 +19,12 @@ class FirstFrameworkTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testFirstFramework() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let ffw = Calculator()
+        
+        XCTAssertEqual(ffw.multiply(2, with: 5), 10)
     }
 
     func testPerformanceExample() throws {
@@ -30,5 +33,4 @@ class FirstFrameworkTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

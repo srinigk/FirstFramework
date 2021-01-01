@@ -10,6 +10,7 @@
 		93E69597259EDDD50082D0D4 /* FirstFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E6958D259EDDD50082D0D4 /* FirstFramework.framework */; };
 		93E6959C259EDDD50082D0D4 /* FirstFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E6959B259EDDD50082D0D4 /* FirstFrameworkTests.swift */; };
 		93E6959E259EDDD50082D0D4 /* FirstFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E69590259EDDD50082D0D4 /* FirstFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93E695A8259EEB1F0082D0D4 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E695A7259EEB1F0082D0D4 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		93E69596259EDDD50082D0D4 /* FirstFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E6959B259EDDD50082D0D4 /* FirstFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFrameworkTests.swift; sourceTree = "<group>"; };
 		93E6959D259EDDD50082D0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E695A7259EEB1F0082D0D4 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				93E69590259EDDD50082D0D4 /* FirstFramework.h */,
 				93E69591259EDDD50082D0D4 /* Info.plist */,
+				93E695A7259EEB1F0082D0D4 /* Calculator.swift */,
 			);
 			path = FirstFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					93E6958C259EDDD50082D0D4 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					93E69595259EDDD50082D0D4 = {
 						CreatedOnToolsVersion = 11.7;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E695A8259EEB1F0082D0D4 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		93E695A2259EDDD50082D0D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ConnectM.FirstFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		93E695A3259EDDD50082D0D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		93E695A5259EDDD50082D0D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirstFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		93E695A6259EDDD50082D0D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirstFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
